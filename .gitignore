@@ -1,0 +1,4 @@
+
+// node modules and .env of backend and frontend are hidden
+.env
+node_modules
