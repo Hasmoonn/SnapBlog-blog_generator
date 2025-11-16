@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@theme{
+  --color-primary: #0282C3;
+}
+
+.rich-text { font-size: 15px;  }
+
+.rich-text p { margin-bottom: 16px; color: #292929; }
+
+.rich-text h1 { font-size: 36px; font-weight: 700; color: #252525 !important; margin: 32px 0; }
+
+.rich-text h2 { font-size: 22px; font-weight: 700; color: #252525 !important; margin: 24px 0; }
+
+.rich-text h3 { font-size: 18px; font-weight: 600; color: #333333 !important; margin: 20px 0; }
+
+.rich-text h4 { font-size: 16px; font-weight: 500; color: #444444 !important; margin: 16px 0; }
+
+.rich-text h5 { font-size: 14px; font-weight: 400; color: #555555 !important; margin: 12px 0; }
+
+.rich-text h6 { font-size: 12px; font-weight: 400; color: #666666 !important; margin: 8px 0; }
+
+.rich-text strong { font-weight: 700; }
+
+.rich-text ol { margin-left: 30px; list-style-type: decimal; }
+
+.rich-text ul { margin-left: 30px; list-style-type: disc; }
+
+.rich-text li { margin-bottom: 8px; }
+
+.rich-text a { color: #007AFF }
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-50px); }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animated-gradient-text {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-gradient 3s ease infinite;
+}
+
+@keyframes text-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
